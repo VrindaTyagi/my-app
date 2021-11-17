@@ -8,9 +8,9 @@ const dbSchema = new mongoose.Schema({
 //   date: Date,
 })
 
-const data = mongoose.model('Data', dbSchema)
+const Data = mongoose.model('Data', dbSchema)
 
-const note = new Data({
+const data = new Data({
   content: 'db initialised',
   date: new Date(),
 })
